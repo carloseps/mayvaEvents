@@ -336,7 +336,6 @@ footer .footer-copyright {
     .home h2{
         font-size: 22px;
         width: 85%;
-        margin-top: 10px;
         margin-bottom: 20px;
     }
     .home h3{
@@ -365,24 +364,12 @@ footer .footer-copyright {
     }
 
     .home .botao-cta-1 {
-        width: 65%;
+        width: 90%;
         font-size: 15px;
         font-weight: 600;
         margin: 0 auto;
         min-width: 6.25rem;
         min-height: 3.5rem;
         padding: .85rem;
-    }
-    footer {
-        align-items: center;
-        background-color: #212121;
-        border-radius: 1.5rem;
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .25);
-        display: flex;
-        height: 5rem;
-        justify-content: center;
-        margin: 1rem;
-        width: 5rem;
-        transition: background-color .2s linear
     }
 }
