@@ -397,14 +397,27 @@ footer .footer-copyright {
     }
     .body .container-picture picture img{
         display: block;
-        height: 32.5rem;
+        height: auto;
+        width: 100%;
     }
     .body .container-picture {
-        height: 75vh;
+        height: 95vh;
     }
     .body h2{
         font-size: 22px;
         width: 85%;
         margin-bottom: 20px;
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 675px) {
+    .body .container-picture {
+        padding-top: 60px;
+        height: 95vh;
+    }
+    .body h2{
+        padding-top: 0px;
+        padding-bottom: 30px;
     }
 }
