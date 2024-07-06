@@ -245,12 +245,46 @@ main {
     transition: .72s
 }
 
+.body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #101010;
+}
+
+.body .container-picture picture img{
+    display: block;
+    height: 37.5rem;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.body .container-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    height: 50vh;
+}
+
+.body h2{
+    font-size: 30px;
+    color: #212121;
+    width: 55%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .sobre {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #960d0d;
-    color: #101010;
+    background: #444;
+    color: #960d0d;
 }
 
 .sobre .container {
@@ -260,33 +294,10 @@ main {
     padding: 20px;
     text-align: center;
     height: 50vh;
-    background: #f3f3f3;
-}
-
-.sobre .container h1{
-    font-size: 50px;
-    
-}
-
-.servicos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #444;
-    color: #960d0d;
-}
-
-.servicos .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
-    height: 50vh;
     background: #101010;
 }
 
-.servicos .container h1{
+.sobre .container h1{
     font-size: 50px;
 }
 
@@ -301,6 +312,16 @@ footer .footer-copyright {
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: center
+}
+
+@media (max-width: 952px) {
+    .body{
+        flex-direction: column;
+    }
+    .body .container-picture {
+        padding-top: 60px;
+        height: 95vh;
+    }
 }
 
 @media (max-width: 767px) {
@@ -362,7 +383,6 @@ footer .footer-copyright {
         width: 100%;
         height: 100%
     }
-
     .home .botao-cta-1 {
         width: 90%;
         font-size: 15px;
@@ -371,5 +391,20 @@ footer .footer-copyright {
         min-width: 6.25rem;
         min-height: 3.5rem;
         padding: .85rem;
+    }
+    .body {
+        flex-direction: column;
+    }
+    .body .container-picture picture img{
+        display: block;
+        height: 32.5rem;
+    }
+    .body .container-picture {
+        height: 75vh;
+    }
+    .body h2{
+        font-size: 22px;
+        width: 85%;
+        margin-bottom: 20px;
     }
 }
