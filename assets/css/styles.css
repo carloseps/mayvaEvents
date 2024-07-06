@@ -412,6 +412,9 @@ footer .footer-copyright {
 }
 
 @media (max-width: 675px) {
+    .body{
+        min-height: 70vh;
+    }
     .body .container-picture picture img{
         padding: 0;
     }
@@ -421,6 +424,6 @@ footer .footer-copyright {
     }
     .body h2{
         padding-top: 0px;
-        padding-bottom: 30px;
+        padding-bottom: 0px;
     }
 }
