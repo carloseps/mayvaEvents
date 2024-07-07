@@ -274,43 +274,90 @@ main {
 .body h2{
     font-size: 30px;
     color: #212121;
-    width: 55%;
+    width: 47.5%;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .sobre {
+    background: #191919;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #444;
-    color: #960d0d;
 }
 
 .sobre .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
-    height: 50vh;
-    background: #101010;
 }
 
 .sobre .container h1{
-    font-size: 50px;
+    font-size: 35px;
+    color: #fff
+}
+
+.sobre .container-items {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    list-style: none;
+    margin: 0 auto;
+    width: 97.5%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.sobre .container-items .box-items {
+    color: #e50000;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #101010;
+    text-align: center;
+    height: 300px;
+    width: 32%;
+    padding-top: 50px;
+}
+
+.sobre .container-items .box-items h1{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    width: 70%;
+    color: #fff
+}
+
+.sobre .container-items .box-items h1 picture img{
+    margin-top: 10px;
+    width: 2.5rem;
+}
+
+.sobre .container-round{
+    margin-top: 110px;
+    background: #e50000;
+    height: 75vh;
+    width: 95%;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 footer {
     text-align: center;
-    background: inherit;
+    background: #191919;
 }
 
 footer .footer-copyright {
     color: #960d0d;
     font-weight: 300;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     text-align: center
 }
 
@@ -409,6 +456,27 @@ footer .footer-copyright {
         margin-bottom: 20px;
         padding-top: 40px;
     }
+    .sobre .container{
+        padding: 0;
+        margin-top: 40px;
+    }
+    .sobre .container h1{
+        width: 90%;
+        font-size: 25px;
+    }
+    .sobre .container-items .box-items {
+        display: block;
+        padding: 25px;
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+        height: fit-content;
+    }
+    .sobre .container-items .box-items h1 {
+        margin: 0 auto;
+        padding-top: 20px;
+        width: 60%;
+    }
 }
 
 @media (max-width: 675px) {
@@ -425,5 +493,8 @@ footer .footer-copyright {
     .body h2{
         padding-top: 0px;
         padding-bottom: 30px;
+    }
+    .sobre .container-items .box-items h1 {
+        width: 90%;
     }
 }
