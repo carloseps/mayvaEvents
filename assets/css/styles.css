@@ -662,6 +662,9 @@ footer .footer-copyright {
         height: fit-content;
     }
     .end .container-round .container{
+        margin-top: 0px;
+    }
+    .end .container{
         padding: 0px;
     }
     .end .container-round .container-picture picture img {
