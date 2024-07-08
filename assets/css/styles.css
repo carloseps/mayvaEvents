@@ -495,7 +495,7 @@ footer .footer-copyright {
     }
     .end .container-round .container-picture {
         margin-left: 0px;
-        margin-right: 10px;
+        margin-right: 7px;
     }
     .end .container-picture {
         padding-top: 60px;
@@ -603,11 +603,11 @@ footer .footer-copyright {
         padding: .85rem;
     }
     .end .container{
-        padding: 0;
+        padding: 30px;
         margin-top: 40px;
     }
     .end .container h1{
-        width: 90%;
+        width: 100%;
         font-size: 25px;
     }
     .end .container-items .box-items {
@@ -652,14 +652,19 @@ footer .footer-copyright {
         padding-bottom: 30px;
     }
     .end .container-round .container-picture {
-        padding-top: 10px;
         padding-bottom: 0px;
-    }
-    .end .container-round {
-        padding-bottom: 29.5px;
-        height: 100vh;
     }
     .end .container-items .box-items h1 {
         width: 90%;
+    }
+    .end .container-round {
+        padding-bottom: 29.5px;
+        height: fit-content;
+    }
+    .end .container-round .container-picture picture img {
+        padding-bottom: 0px;
+    }
+    .end .container-round h1 {
+        padding-top: 0px;
     }
 }
