@@ -489,11 +489,13 @@ footer .footer-copyright {
     }
     .end .container-round{
         padding: 30px;
+        padding-bottom: 0px;
         flex-direction: column;
         height: fit-content;
     }
     .end .container-round .container-picture {
-        margin: 0 auto;
+        margin-left: 0px;
+        margin-right: 10px;
     }
     .end .container-picture {
         padding-top: 60px;
@@ -648,6 +650,13 @@ footer .footer-copyright {
         padding-top: 0px;
         margin-top: 0px;
         padding-bottom: 30px;
+    }
+    .end .container-round .container-picture {
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+    .end .container-round {
+        padding-bottom: 29.5px;
     }
     .end .container-items .box-items h1 {
         width: 90%;
