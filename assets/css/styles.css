@@ -322,7 +322,7 @@ main {
     transition: .72s
 }
 
-.sobre {
+.end {
     background: #191919;
     display: flex;
     flex-direction: column;
@@ -330,7 +330,12 @@ main {
     justify-content: center;
 }
 
-.sobre .container {
+.end .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.end .container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -338,12 +343,12 @@ main {
     text-align: center;
 }
 
-.sobre .container h1{
+.end .container h1{
     font-size: 35px;
     color: #fff
 }
 
-.sobre .container-items {
+.end .container-items {
     padding-bottom: 15px;
     padding-top: 15px;
     list-style: none;
@@ -356,7 +361,7 @@ main {
     justify-content: space-evenly
 }
 
-.sobre .container-items .box-items {
+.end .container-items .box-items {
     color: #e50000;
     border-radius: 3%;
     display: flex;
@@ -369,7 +374,7 @@ main {
     padding-top: 50px;
 }
 
-.sobre .container-items .box-items h1{
+.end .container-items .box-items h1{
     margin-top: 20px;
     font-size: 18px;
     font-weight: 400;
@@ -377,18 +382,85 @@ main {
     color: #fff
 }
 
-.sobre .container-items .box-items h1 picture img{
+.end .container-items .box-items h1 picture img{
     margin-top: 10px;
     width: 2.5rem;
 }
 
-.sobre .container-round{
+.end .container-round {
+    display: flex;
+    align-items: center;
     margin-top: 50px;
     background: #e50000;
     height: 75vh;
     width: 95%;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+.end .container-round .container-picture picture img{
+    display: block;
+    height: 22.5rem;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.end .container-round .container-picture {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    height: 50vh;
+}
+
+.end .container-round h1 {
+    margin: 0 auto;
+    font-size: 30px;
+    color: #fff;
+    width: 80%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.end .botao-cta-3 {
+    border: none;
+    border-radius: 5px;
+    background: #80D315;
+    color: #212121;
+    -webkit-box-shadow: 0 10px 16px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, .5);
+    display: flex;
+    width: 79.5%;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 auto;
+    min-width: 5.25rem;
+    min-height: 3rem;
+    padding: .85rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    transition: .71s
+}
+
+.end .botao-cta-3 svg {
+    color: #212121;
+    height: 1.875rem;
+    transition: transform .2s linear;
+    width: 1.875rem;
+    margin-right: 10px;
+}
+
+.end .botao-cta-3:hover {
+    background: #e4ffc0;
+    border: none;
+    transition: .72s
 }
 
 footer {
@@ -400,7 +472,7 @@ footer .footer-copyright {
     color: #960d0d;
     font-weight: 300;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     text-align: center
 }
 
@@ -413,6 +485,21 @@ footer .footer-copyright {
         height: 95vh;
     }
     .body h2{
+        margin-top: 20px;
+    }
+    .end .container-round{
+        padding: 30px;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .end .container-round .container-picture {
+        margin: 0 auto;
+    }
+    .end .container-picture {
+        padding-top: 60px;
+        height: 95vh;
+    }
+    .end h2{
         margin-top: 20px;
     }
 }
@@ -513,15 +600,15 @@ footer .footer-copyright {
         min-height: 3.5rem;
         padding: .85rem;
     }
-    .sobre .container{
+    .end .container{
         padding: 0;
         margin-top: 40px;
     }
-    .sobre .container h1{
+    .end .container h1{
         width: 90%;
         font-size: 25px;
     }
-    .sobre .container-items .box-items {
+    .end .container-items .box-items {
         display: block;
         padding: 25px;
         width: 100%;
@@ -529,10 +616,19 @@ footer .footer-copyright {
         margin: 10px;
         height: fit-content;
     }
-    .sobre .container-items .box-items h1 {
+    .end .container-items .box-items h1 {
         margin: 0 auto;
         padding-top: 20px;
         width: 60%;
+    }
+    .end .botao-cta-3 {
+        width: 97.5%;
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0 auto;
+        min-width: 6.25rem;
+        min-height: 3.5rem;
+        padding: .85rem;
     }
 }
 
@@ -544,14 +640,16 @@ footer .footer-copyright {
         padding: 0;
     }
     .body .container-picture {
-        padding-top: 0px;
+        padding-top: 30px;
+        padding-bottom: 0px;
         height: auto;
     }
     .body h2{
         padding-top: 0px;
+        margin-top: 0px;
         padding-bottom: 30px;
     }
-    .sobre .container-items .box-items h1 {
+    .end .container-items .box-items h1 {
         width: 90%;
     }
 }
