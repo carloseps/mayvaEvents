@@ -35,8 +35,38 @@
     }
 }
 
+.bottom{
+    position: relative;
+    opacity: 0;
+}
+
+.bottom.active{
+    opacity: 1;
+    animation: slideInTop 0.8s ease-in;
+}
+
+.left{
+    position: relative;
+    opacity: 0;
+}
+
+.left.active{
+    opacity: 1;
+    animation: slideInLeft 0.8s ease-in;
+}
+
+.right{
+    position: relative;
+    opacity: 0;
+}
+
+.right.active{
+    opacity: 1;
+    animation: slideInRight 0.8s ease-in;
+}
+
 :root {
-    --primary-color: #efb815
+    --primary-color: #960d0d;
 }
 
 body,
