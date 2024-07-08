@@ -652,12 +652,12 @@ footer .footer-copyright {
         padding-bottom: 30px;
     }
     .end .container-round .container-picture {
-        padding-top: 30px;
+        padding-top: 10px;
         padding-bottom: 0px;
     }
     .end .container-round {
         padding-bottom: 29.5px;
-        height: fit-content;
+        height: 100vh;
     }
     .end .container-items .box-items h1 {
         width: 90%;
