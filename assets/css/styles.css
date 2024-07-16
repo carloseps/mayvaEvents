@@ -233,6 +233,11 @@ main {
     padding-bottom: 10px;
 }
 
+.home .container-video .video-player{
+    width: 724px;
+    height: 409px;
+}
+
 .home .container h1{
     font-size: 50px;
 
@@ -578,22 +583,13 @@ footer .footer-copyright {
         margin-bottom: 0px;
     }
     .home .container-video{
-        height: auto;
-        width: 100%;
+        width: 97.5%;
         padding-bottom: 20px;
     }
-    .iframe-container {
+    .home .container-video .video-player {
+        width: 100%;
+        height: 100%;
         position: relative;
-        width: 100%;
-        padding-bottom: 56.25%;
-        height: 0
-    }
-    .iframe-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%
     }
     .home .botao-cta-1 {
         width: 90%;
